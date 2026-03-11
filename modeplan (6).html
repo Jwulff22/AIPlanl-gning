@@ -1,0 +1,1997 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tørning Ældre center - inde - (17-02-2025 - 16-03-2025) - Mødeplan</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ── KMD.dk 2024 brand — grøn #009B4D / mørk grøn #1F614E / hvid ─────────────────────────────── */
+  :root {
+    --kmd-navy:      #1F614E;
+    --kmd-navy-mid:  #194F3E;
+    --kmd-navy-light:#E6F2EE;
+    --kmd-teal:      #009B4D;  /* aliased to green */
+    --kmd-teal-dark: #007A3D;
+    --kmd-teal-light:#E6F5ED;
+    --kmd-white:     #ffffff;
+    --kmd-gray-bg:   #f5f6f8;
+    --kmd-gray-line: #E0E5E2;
+    --kmd-gray-mid:  #9aa3ad;
+    --kmd-gray-dark: #2A4A3E;
+    --kmd-text:      #1F614E;
+    --kmd-green:      #009B4D;
+    --kmd-green-dark: #007A3D;
+    --kmd-green-light:#E6F5ED;
+    --kmd-green-mid:  #7DC9A0;
+    --kmd-warn:      #D4720A;
+    --kmd-danger:    #C0392B;
+    --font: 'Inter', 'Segoe UI', sans-serif;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: var(--font); font-size:11px; background:var(--kmd-gray-bg); color:var(--kmd-text); }
+
+  /* ── Title bar ─── navy KMD header ───────────────────────────────────── */
+  .title-bar {
+    background: var(--kmd-navy);
+    color: white;
+    padding: 0 14px;
+    height: 36px;
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 12px; font-weight: 500; letter-spacing: .01em;
+    border-bottom: 3px solid var(--kmd-green);
+  }
+  .title-bar-left { display:flex; align-items:center; gap:10px; }
+  .title-bar-left .kmd-logo {
+    font-weight:700; font-size:14px; letter-spacing:.08em;
+    color:white; border-right:1px solid rgba(255,255,255,.2); padding-right:10px; margin-right:2px;
+  }
+  .title-bar-controls { display:flex; gap:1px; }
+  .title-bar-btn {
+    width:24px; height:24px; border:none;
+    background:rgba(255,255,255,.08); color:rgba(255,255,255,.8); font-size:11px;
+    cursor:pointer; display:flex; align-items:center; justify-content:center;
+    transition:background .1s;
+  }
+  .title-bar-btn:hover { background:rgba(255,255,255,.18); }
+  .title-bar-btn:last-child:hover { background:#c0392b; color:white; }
+
+  /* ── Ribbon ───────────────────────────────────────────────────────────── */
+  .ribbon { background:var(--kmd-white); border-bottom:1px solid var(--kmd-gray-line); box-shadow:0 1px 4px rgba(31,97,78,.07); }
+  .ribbon-tabs {
+    display:flex; background:var(--kmd-white);
+    border-bottom:1px solid var(--kmd-gray-line);
+    padding:0 12px; gap:0;
+  }
+  .ribbon-tab {
+    padding:6px 16px; background:transparent; border:none;
+    border-bottom:2px solid transparent; cursor:pointer;
+    font-size:11px; font-weight:500; color:var(--kmd-gray-mid);
+    margin-bottom:-1px; font-family:var(--font); transition:color .12s;
+  }
+  .ribbon-tab:hover { color:var(--kmd-navy); }
+  .ribbon-tab.active { border-bottom-color:var(--kmd-green); color:var(--kmd-navy); background:var(--kmd-white); font-weight:600; }
+
+  .ribbon-body {
+    display:flex; align-items:stretch; padding:5px 10px; gap:0;
+  }
+  .ribbon-group {
+    display:flex; flex-direction:column; align-items:flex-start;
+    padding:2px 12px 2px 6px; border-right:1px solid var(--kmd-gray-line); gap:2px;
+  }
+  .ribbon-group:last-child { border-right:none; }
+  .ribbon-group-btns { display:flex; gap:1px; align-items:center; flex:1; flex-wrap:wrap; }
+  .ribbon-group-label {
+    font-size:9px; color:var(--kmd-gray-mid); letter-spacing:.06em; text-transform:uppercase;
+    text-align:center; width:100%; border-top:1px solid var(--kmd-gray-line);
+    padding-top:3px; margin-top:3px; font-weight:500;
+  }
+
+  .ribbon-btn {
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    padding:3px 6px; cursor:pointer; border:1px solid transparent;
+    border-radius:4px; min-width:38px; background:transparent;
+    font-size:10px; color:var(--kmd-gray-dark); gap:1px;
+    transition:all .1s; font-family:var(--font);
+  }
+  .ribbon-btn:hover { background:var(--kmd-green-light); border-color:var(--kmd-green-mid); color:var(--kmd-green-dark); }
+  .ribbon-btn:hover svg { stroke:var(--kmd-green) !important; }
+  .ribbon-btn .icon { width:20px; height:20px; display:flex; align-items:center; justify-content:center; }
+  .ribbon-btn .icon svg { width:17px; height:17px; }
+  .ribbon-btn.small { flex-direction:row; min-width:unset; padding:4px 8px; font-size:11px; gap:4px; }
+  .ribbon-btn.small .icon { width:13px; height:13px; }
+  .ribbon-btn.small .icon svg { width:12px; height:12px; }
+
+  .period-ctrl { display:flex; align-items:center; gap:5px; font-size:11px; flex-wrap:wrap; }
+  .period-ctrl label { font-size:10px; color:var(--kmd-gray-mid); white-space:nowrap; }
+  .period-ctrl input {
+    border:1px solid var(--kmd-gray-line); padding:3px 6px; font-size:11px;
+    background:white; border-radius:4px; color:var(--kmd-text);
+    font-family:var(--font); transition:border-color .1s;
+  }
+  .period-ctrl input:focus { outline:none; border-color:var(--kmd-green); box-shadow:0 0 0 2px var(--kmd-green-light); }
+  .period-ctrl input[type=number] { width:40px; }
+  .period-ctrl button {
+    border:1px solid var(--kmd-gray-line); background:white; padding:3px 7px;
+    border-radius:4px; cursor:pointer; font-size:11px; color:var(--kmd-gray-dark);
+    font-family:var(--font); transition:all .1s;
+  }
+  .period-ctrl button:hover { border-color:var(--kmd-green); color:var(--kmd-green); }
+
+  /* ── AI ribbon button ─── teal KMD style ─────────────────────────────── */
+  .ribbon-btn.ai-btn {
+    background: var(--kmd-green); border:1px solid var(--kmd-green-dark) !important;
+    color:white !important; border-radius:4px; padding:5px 12px; min-width:62px;
+    box-shadow:0 2px 8px rgba(0,155,77,.28);
+  }
+  .ribbon-btn.ai-btn:hover {
+    background:var(--kmd-green-dark) !important; border-color:var(--kmd-green-dark) !important;
+    color:white !important; box-shadow:0 3px 12px rgba(0,155,77,.38);
+  }
+  .ribbon-btn.ai-btn:hover svg { stroke:white !important; }
+  .ribbon-btn.ai-btn .icon svg { stroke:white !important; }
+  .ribbon-btn.ai-btn div:last-child { color:rgba(255,255,255,.95); font-weight:700; font-size:9px; letter-spacing:.03em; }
+  .ai-spark { color:#ffe082; }
+  .ribbon-group-label.kmd-ai-label { color:var(--kmd-green); border-top-color:var(--kmd-green-mid); font-weight:700; }
+
+  /* ── Page body ────────────────────────────────────────────────────────── */
+  .page-body { display:flex; overflow:hidden; height:calc(100vh - 136px); }
+  .main-content { overflow:auto; flex:1; height:100%; }
+
+  /* ── Schedule table ───────────────────────────────────────────────────── */
+  .schedule-table { border-collapse:collapse; white-space:nowrap; font-size:10px; }
+  .schedule-table th, .schedule-table td {
+    border:1px solid var(--kmd-gray-line); padding:1px 4px; height:22px;
+  }
+
+  /* ── Week headers ─── KMD dark + green accent ──────────────────────────── */
+  .header-week th {
+    background:var(--kmd-navy); color:white;
+    font-weight:600; font-size:10px; text-align:center;
+    border:1px solid var(--kmd-navy-mid); padding:4px 6px; letter-spacing:.02em;
+    border-top:2px solid var(--kmd-green);
+  }
+  .header-week th[style*="background:#dde3ec"],
+  .header-week th[style*="background:#c8d8ee"] {
+    background:#163F30 !important; border-color:#0E2D20 !important;
+  }
+
+  /* ── Day headers ─── lighter navy ────────────────────────────────────── */
+  .header-day th {
+    background:#194F3E; color:#C8E0D8;
+    font-weight:500; border:1px solid #1F614E;
+    text-align:center; font-size:10px; min-width:92px; letter-spacing:.01em;
+  }
+  .header-day .col-medarbejder { min-width:140px; background:#1F614E; color:#A8D4C4; }
+  .header-day .col-afl   { width:20px;  background:#1F614E; color:#A8D4C4; }
+  .header-day .col-navn  { min-width:120px; background:#1F614E; color:#A8D4C4; }
+  .header-day .col-sort  { width:45px;  background:#1F614E; color:#A8D4C4; }
+  .header-day .col-medarb{ width:45px;  background:#1F614E; color:#A8D4C4; }
+  .header-day .col-lonk  { min-width:80px; background:#1F614E; color:#A8D4C4; }
+  .header-day .weekend   { background:#163F30; color:#8CC4A8; }
+
+  /* ── Data rows ────────────────────────────────────────────────────────── */
+  .data-row td { vertical-align:middle; }
+  .data-row:nth-child(even) { background:#fafbfc; }
+  .data-row:nth-child(odd)  { background:var(--kmd-white); }
+  .data-row:hover { background:var(--kmd-green-light); }
+
+  .col-a       { width:16px; text-align:center; }
+  .col-aflform { width:24px; text-align:center; color:var(--kmd-gray-mid); }
+  .col-navn    { min-width:130px; font-weight:500; }
+  .col-sortnr  { width:40px; text-align:right; padding-right:4px; color:var(--kmd-gray-mid); }
+  .col-medarbr { width:40px; text-align:right; padding-right:4px; color:var(--kmd-gray-mid); }
+  .col-lonk    { width:70px; text-align:right; padding-right:4px; }
+
+  .data-row.highlight-red td { color:#C0392B; font-style:italic; }
+
+  /* ── Shift cells ──────────────────────────────────────────────────────── */
+  .shift-cell { min-width:88px; height:18px; position:relative; padding:0 2px; }
+  .shift-cell.weekend { background:#EFF8F3; }
+
+  .shift-block {
+    display:inline-flex; align-items:center;
+    height:15px; padding:0 5px;
+    font-size:9px; font-weight:600; border-radius:3px;
+    white-space:nowrap; margin:1px 0; letter-spacing:.02em;
+  }
+  /* KMD.dk-aligned shift palette */
+  .shift-green  { background:var(--kmd-green);     color:white; }   /* dagvagt */
+  .shift-blue   { background:var(--kmd-navy);       color:white; }   /* aftenvagt */
+  .shift-yellow { background:#f5f5f5; color:#888;  border:1px solid #e0e0e0; } /* fri */
+  .shift-orange { background:var(--kmd-warn);       color:white; }
+  .shift-purple { background:#5c35a0;               color:white; }
+  .shift-teal   { background:#00838A;               color:white; }
+  .shift-gray   { background:#8a9aaa;               color:white; }
+  .shift-red    { background:var(--kmd-danger);     color:white; }
+  .shift-dark   { background:var(--kmd-navy);       color:white; }
+
+  .shift-tag {
+    font-size:8px; background:rgba(0,0,0,.2); color:white;
+    padding:0 3px; border-radius:2px; margin-left:3px; font-weight:700;
+  }
+
+  /* ── Bottom summary ─── teal ──────────────────────────────────────────── */
+  .bottom-summary td {
+    background:var(--kmd-green); color:white;
+    border:1px solid var(--kmd-green-dark); font-weight:600;
+    text-align:center; font-size:10px; padding:3px 4px;
+  }
+
+  /* ── Scrollbars ───────────────────────────────────────────────────────── */
+  ::-webkit-scrollbar { width:7px; height:7px; }
+  ::-webkit-scrollbar-track { background:var(--kmd-gray-bg); }
+  ::-webkit-scrollbar-thumb { background:var(--kmd-gray-line); border-radius:4px; }
+  ::-webkit-scrollbar-thumb:hover { background:var(--kmd-green); }
+
+  .sub-row td { height:16px; }
+
+  /* ── Status bar ─── navy ──────────────────────────────────────────────── */
+  .status-bar {
+    background:var(--kmd-navy); border-top:2px solid var(--kmd-green);
+    padding:3px 12px; font-size:10px; color:rgba(255,255,255,.45);
+    display:flex; gap:16px; align-items:center;
+  }
+
+  /* ════════════════════════════════════════════════════════════════════════
+     AI PANEL
+  ════════════════════════════════════════════════════════════════════════ */
+  .ai-panel {
+    width:0; overflow:hidden; background:var(--kmd-white);
+    border-left:none; transition:width .22s ease, border .22s;
+    flex-shrink:0; display:flex; flex-direction:column;
+  }
+  .ai-panel.open { width:380px; border-left:3px solid var(--kmd-green); }
+  .ai-panel-inner { width:380px; display:flex; flex-direction:column; height:100%; overflow:hidden; }
+
+  .ai-panel-header {
+    background:var(--kmd-navy); color:white;
+    padding:12px 14px; display:flex; align-items:center; gap:10px; flex-shrink:0;
+    border-bottom:2px solid var(--kmd-green);
+  }
+  .ai-panel-header h2 { font-size:13px; font-weight:700; flex:1; letter-spacing:.02em; }
+  .ai-panel-subtitle  { font-size:9px; opacity:.65; margin-top:2px; font-weight:400; color:var(--kmd-green-mid); }
+  .close-btn {
+    cursor:pointer; width:24px; height:24px;
+    display:flex; align-items:center; justify-content:center;
+    border-radius:4px; font-size:14px; opacity:.7; transition:all .1s;
+  }
+  .close-btn:hover { background:rgba(255,255,255,.15); opacity:1; }
+
+  .ai-panel-body { flex:1; overflow-y:auto; padding:14px; display:flex; flex-direction:column; gap:14px; }
+
+  .ai-section-label {
+    font-size:9px; font-weight:700; letter-spacing:.1em;
+    color:var(--kmd-gray-mid); text-transform:uppercase; margin-bottom:6px;
+  }
+
+  .ai-status-bar {
+    display:flex; align-items:center; gap:8px;
+    background:var(--kmd-gray-bg); border:1px solid var(--kmd-gray-line);
+    border-radius:6px; padding:8px 12px;
+  }
+  .ai-status-txt { font-size:10px; color:var(--kmd-gray-dark); font-weight:500; }
+  .ai-run-time   { margin-left:auto; font-size:9px; color:var(--kmd-gray-mid); font-family:'Courier New',monospace; }
+
+  /* Score cards */
+  .ai-score-row { display:flex; gap:6px; }
+  .ai-score-card {
+    flex:1; background:white; border:1px solid var(--kmd-gray-line);
+    border-radius:6px; padding:10px 8px; text-align:center; border-top:3px solid #ccc;
+  }
+  .ai-score-card.hard  { border-top-color:var(--kmd-danger); }
+  .ai-score-card.med   { border-top-color:var(--kmd-warn); }
+  .ai-score-card.soft  { border-top-color:var(--kmd-green); }
+  .ai-score-card .sc-label { font-size:8px; color:var(--kmd-gray-mid); margin-bottom:4px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; }
+  .ai-score-card .sc-val   { font-family:'Courier New',monospace; font-size:20px; font-weight:700; line-height:1; }
+  .ai-score-card.hard .sc-val { color:var(--kmd-danger); }
+  .ai-score-card.med .sc-val  { color:var(--kmd-warn); }
+  .ai-score-card.soft .sc-val { color:var(--kmd-green); }
+
+  /* KPI grid */
+  .ai-kpi-row { display:grid; grid-template-columns:1fr 1fr; gap:6px; }
+  .ai-kpi {
+    background:white; border:1px solid var(--kmd-gray-line); border-radius:6px;
+    padding:8px 10px; border-left:3px solid var(--kmd-green);
+  }
+  .ai-kpi .kl { font-size:9px; color:var(--kmd-gray-mid); margin-bottom:3px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; }
+  .ai-kpi .kv { font-size:16px; font-weight:700; color:var(--kmd-navy); font-family:'Courier New',monospace; }
+  .ai-kpi .ks { font-size:8px; color:var(--kmd-gray-mid); margin-top:2px; }
+
+  /* Constraint table */
+  .constraint-table { width:100%; border-collapse:collapse; }
+  .constraint-table tr { border-bottom:1px solid var(--kmd-gray-line); }
+  .constraint-table tr:last-child { border-bottom:none; }
+  .constraint-table td { padding:6px 4px; font-size:10px; vertical-align:middle; }
+  .c-badge { font-size:8px; font-weight:700; padding:2px 6px; border-radius:3px; white-space:nowrap; }
+  .c-badge.hard   { background:#fde8e8; color:var(--kmd-danger); }
+  .c-badge.medium { background:#fef0e0; color:var(--kmd-warn); }
+  .c-badge.soft   { background:var(--kmd-green-light); color:var(--kmd-green-dark); }
+  .c-status { display:inline-block; width:7px; height:7px; border-radius:50%; }
+  .c-status.ok   { background:#22c55e; }
+  .c-status.warn { background:var(--kmd-warn); }
+  .c-status.err  { background:var(--kmd-danger); }
+  .c-score { font-family:'Courier New',monospace; font-size:10px; color:var(--kmd-gray-mid); text-align:right; }
+
+  /* Fairness */
+  .fairness-item { margin-bottom:7px; }
+  .fairness-name { font-size:9px; color:var(--kmd-gray-dark); margin-bottom:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .fairness-bar-bg { background:var(--kmd-gray-bg); border-radius:3px; height:6px; overflow:hidden; }
+  .fairness-bar-fill { height:100%; border-radius:3px; background:var(--kmd-green); transition:width .4s ease; }
+  .fairness-hours { font-size:9px; color:var(--kmd-gray-mid); text-align:right; margin-top:1px; }
+
+  /* Progress */
+  .ai-progress-wrap { display:none; }
+  .ai-progress-wrap.show { display:block; }
+  .ai-progress-bg { background:var(--kmd-gray-bg); border-radius:3px; height:5px; overflow:hidden; margin:6px 0 3px; }
+  .ai-progress-fill { height:100%; background:var(--kmd-green); border-radius:3px; transition:width .3s ease; width:0%; }
+  .ai-progress-step { font-size:9px; color:var(--kmd-gray-mid); }
+
+  /* Solve button */
+  .ai-solve-btn {
+    width:100%; padding:11px; border:none; border-radius:6px; cursor:pointer;
+    background:var(--kmd-green); color:white; font-size:12px; font-weight:700;
+    font-family:var(--font); display:flex; align-items:center; justify-content:center;
+    gap:8px; transition:background .15s; letter-spacing:.03em;
+    box-shadow:0 2px 8px rgba(0,137,123,.3);
+  }
+  .ai-solve-btn:hover { background:var(--kmd-green-dark); box-shadow:0 4px 14px rgba(0,155,77,.4); }
+  .ai-solve-btn:disabled { background:var(--kmd-gray-mid); box-shadow:none; cursor:not-allowed; }
+
+  /* Log */
+  .ai-log {
+    background:#142E24; border-radius:6px; padding:8px 10px;
+    height:100px; overflow-y:auto;
+  }
+  .ai-log-line { font-family:'Courier New',monospace; font-size:9px; line-height:1.7; }
+  .ai-log-line.ok   { color:#4ade80; }
+  .ai-log-line.info { color:#7dd3fc; }
+  .ai-log-line.warn { color:#fcd34d; }
+  .ai-log-time { color:#3A6A54; margin-right:6px; }
+
+  /* Pulse */
+  .pulse-dot {
+    display:inline-block; width:8px; height:8px; border-radius:50%;
+    background:var(--kmd-gray-mid); flex-shrink:0; transition:background .2s;
+  }
+  .pulse-dot.solving { background:var(--kmd-green); animation:kmd-pulse 1s infinite; }
+  @keyframes kmd-pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+
+  .ai-footer {
+    padding:12px 14px; border-top:1px solid var(--kmd-gray-line);
+    background:var(--kmd-gray-bg); flex-shrink:0; display:flex; flex-direction:column; gap:8px;
+  }
+  .ai-divider { border:none; border-top:1px solid var(--kmd-gray-line); }
+  .bottom-summary td.weekend { background:#007A3D; }
+  /* ── AI panel tabs ──────────────────────────────────────────────────────── */
+  .ai-tabs {
+    display:flex; background:var(--kmd-navy); border-bottom:1px solid var(--kmd-green);
+    flex-shrink:0; overflow-x:auto; scrollbar-width:none;
+  }
+  .ai-tabs::-webkit-scrollbar { display:none; }
+  .ai-tab {
+    flex:0 0 auto; padding:8px 12px; font-size:10px; font-weight:600;
+    color:rgba(255,255,255,.5); cursor:pointer; border-bottom:2px solid transparent;
+    white-space:nowrap; letter-spacing:.02em; transition:all .12s;
+    font-family:var(--font);
+  }
+  .ai-tab:hover { color:rgba(255,255,255,.8); }
+  .ai-tab.active { color:white; border-bottom-color:var(--kmd-green); }
+
+  .ai-tab-pane { display:none; }
+  .ai-tab-pane.active { display:flex; flex-direction:column; gap:12px; }
+
+  /* ── Category editor (Kompetencer / Funktioner / Opgaver / Stillinger) ── */
+  .cat-card {
+    background:white; border:1px solid var(--kmd-gray-line); border-radius:6px; overflow:hidden;
+  }
+  .cat-card-header {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:8px 12px; background:var(--kmd-gray-bg);
+    border-bottom:1px solid var(--kmd-gray-line); cursor:pointer;
+  }
+  .cat-card-header:hover { background:#EAF2EE; }
+  .cat-card-title { font-size:11px; font-weight:600; color:var(--kmd-navy); display:flex; align-items:center; gap:6px; }
+  .cat-card-title svg { flex-shrink:0; }
+  .cat-badge-count {
+    font-size:9px; background:var(--kmd-green); color:white;
+    padding:1px 6px; border-radius:10px; font-weight:700;
+  }
+  .cat-chevron { font-size:10px; color:var(--kmd-gray-mid); transition:transform .15s; }
+  .cat-card.open .cat-chevron { transform:rotate(180deg); }
+  .cat-card-body { display:none; padding:10px 12px; }
+  .cat-card.open .cat-card-body { display:block; }
+
+  .cat-item {
+    display:flex; align-items:center; gap:8px; padding:5px 0;
+    border-bottom:1px solid var(--kmd-gray-line); font-size:10px;
+  }
+  .cat-item:last-child { border-bottom:none; }
+  .cat-item-dot {
+    width:8px; height:8px; border-radius:50%; flex-shrink:0;
+  }
+  .cat-item-name { flex:1; color:var(--kmd-text); font-weight:500; }
+  .cat-item-count { font-size:9px; color:var(--kmd-gray-mid); }
+  .cat-item-req {
+    font-size:9px; padding:1px 5px; border-radius:3px; font-weight:600;
+  }
+  .cat-item-req.krav { background:#fde8e8; color:var(--kmd-danger); }
+  .cat-item-req.ønske { background:var(--kmd-green-light); color:var(--kmd-green-dark); }
+
+  .cat-add-btn {
+    margin-top:8px; width:100%; padding:5px; border:1px dashed var(--kmd-green-mid);
+    background:var(--kmd-green-light); border-radius:4px; cursor:pointer;
+    font-size:10px; color:var(--kmd-green-dark); font-weight:600;
+    font-family:var(--font); transition:all .1s; display:flex; align-items:center;
+    justify-content:center; gap:4px;
+  }
+  .cat-add-btn:hover { background:var(--kmd-green); color:white; border-color:var(--kmd-green); }
+
+  /* inline constraint toggle */
+  .c-toggle {
+    margin-left:auto; display:flex; align-items:center; gap:4px; cursor:pointer;
+  }
+  .c-toggle input[type=checkbox] { accent-color:var(--kmd-green); cursor:pointer; }
+  .c-toggle-lbl { font-size:9px; color:var(--kmd-gray-mid); }
+
+  /* weight slider */
+  .c-weight { display:flex; align-items:center; gap:6px; margin-top:6px; }
+  .c-weight label { font-size:9px; color:var(--kmd-gray-mid); white-space:nowrap; }
+  .c-weight input[type=range] {
+    flex:1; accent-color:var(--kmd-green); height:3px;
+  }
+  .c-weight span { font-size:9px; color:var(--kmd-navy); font-weight:600; min-width:20px; text-align:right; }
+
+  .constraint-row-expand { cursor:pointer; }
+  .constraint-detail {
+    display:none; padding:6px 4px 2px 20px; border-top:1px solid var(--kmd-gray-line);
+  }
+  .constraint-detail.open { display:block; }
+
+
+  /* ══ LOGIN OVERLAY ══════════════════════════════════════════════════════ */
+  #login-overlay {
+    position: fixed; inset: 0; z-index: 9999;
+    background: var(--kmd-navy);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font);
+  }
+  .login-box {
+    background: white; border-radius: 10px;
+    padding: 44px 48px; width: 360px;
+    box-shadow: 0 24px 64px rgba(0,0,0,.35);
+    display: flex; flex-direction: column; align-items: center; gap: 0;
+  }
+  .login-logo {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 28px;
+  }
+  .login-logo-mark {
+    width: 36px; height: 36px; background: var(--kmd-green);
+    border-radius: 8px; display: flex; align-items: center; justify-content: center;
+  }
+  .login-logo-text {
+    font-size: 22px; font-weight: 700; color: var(--kmd-navy);
+    letter-spacing: .04em;
+  }
+  .login-logo-sub {
+    font-size: 11px; color: var(--kmd-gray-mid); font-weight: 400;
+    letter-spacing: .02em; margin-top: 1px;
+  }
+  .login-divider {
+    width: 100%; height: 1px; background: var(--kmd-gray-line); margin-bottom: 28px;
+  }
+  .login-title {
+    font-size: 16px; font-weight: 700; color: var(--kmd-navy);
+    margin-bottom: 4px; text-align: center;
+  }
+  .login-subtitle {
+    font-size: 11px; color: var(--kmd-gray-mid);
+    margin-bottom: 24px; text-align: center;
+  }
+  .login-field { width: 100%; margin-bottom: 14px; }
+  .login-field label {
+    display: block; font-size: 11px; font-weight: 600;
+    color: var(--kmd-navy); margin-bottom: 5px;
+  }
+  .login-field input {
+    width: 100%; padding: 10px 14px; border: 1.5px solid var(--kmd-gray-line);
+    border-radius: 6px; font-size: 14px; font-family: var(--font);
+    color: var(--kmd-navy); background: var(--kmd-gray-bg);
+    outline: none; transition: border-color .15s, box-shadow .15s;
+    letter-spacing: .2em; text-align: center;
+  }
+  .login-field input:focus {
+    border-color: var(--kmd-green); box-shadow: 0 0 0 3px var(--kmd-green-light);
+    background: white;
+  }
+  .login-error {
+    font-size: 11px; color: var(--kmd-danger); text-align: center;
+    margin-bottom: 12px; min-height: 16px; font-weight: 500;
+    opacity: 0; transition: opacity .2s;
+  }
+  .login-error.show { opacity: 1; }
+  .login-btn {
+    width: 100%; padding: 12px; border: none; border-radius: 6px;
+    background: var(--kmd-green); color: white;
+    font-size: 13px; font-weight: 700; font-family: var(--font);
+    cursor: pointer; letter-spacing: .03em;
+    box-shadow: 0 2px 8px rgba(0,155,77,.3);
+    transition: background .15s, box-shadow .15s;
+  }
+  .login-btn:hover { background: var(--kmd-green-dark); box-shadow: 0 4px 14px rgba(0,155,77,.4); }
+  .login-btn:active { transform: translateY(1px); }
+  .login-footer {
+    margin-top: 20px; font-size: 10px; color: var(--kmd-gray-mid);
+    text-align: center; line-height: 1.6;
+  }
+  .login-shake {
+    animation: shake .35s ease;
+  }
+  @keyframes shake {
+    0%,100% { transform: translateX(0); }
+    20%      { transform: translateX(-8px); }
+    40%      { transform: translateX(8px); }
+    60%      { transform: translateX(-5px); }
+    80%      { transform: translateX(5px); }
+  }
+  /* hide app until logged in */
+  #app-wrapper { display: none; }
+</style>
+</head>
+<body>
+
+<!-- ══ LOGIN OVERLAY ══════════════════════════════════════════════════ -->
+<div id="login-overlay">
+  <div class="login-box" id="login-box">
+    <div class="login-logo">
+      <div class="login-logo-mark">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      </div>
+      <div>
+        <div class="login-logo-text">KMD</div>
+        <div class="login-logo-sub">Nexus Mødeplan</div>
+      </div>
+    </div>
+    <div class="login-divider"></div>
+    <div class="login-title">Log ind</div>
+    <div class="login-subtitle">Tørning Ældre center – inde</div>
+    <div class="login-field">
+      <label>Adgangskode</label>
+      <input type="password" id="login-input" placeholder="······" maxlength="20"
+        onkeydown="if(event.key==='Enter')doLogin()" autocomplete="off">
+    </div>
+    <div class="login-error" id="login-error">Forkert adgangskode. Prøv igen.</div>
+    <button class="login-btn" onclick="doLogin()">Log ind</button>
+    <div class="login-footer">
+      KMD Nexus · Tørning Ældre center<br>
+      Kontakt systemadministrator ved problemer
+    </div>
+  </div>
+</div>
+
+<div id="app-wrapper">
+
+<!-- Title bar -->
+<div class="title-bar">
+  <div class="title-bar-left">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    <span style="display:flex;align-items:center;gap:8px;"><span style="display:inline-block;width:8px;height:8px;background:var(--kmd-green);border-radius:50%;flex-shrink:0"></span>Tørning Ældre center – Mødeplan <span style="opacity:.4;margin:0 4px">|</span> <span style="opacity:.6;font-weight:400;font-size:10px">17-02-2025 · 16-03-2025</span></span>
+  </div>
+  <div class="title-bar-controls">
+    <div class="title-bar-btn">─</div>
+    <div class="title-bar-btn">□</div>
+    <div class="title-bar-btn">✕</div>
+  </div>
+</div>
+
+<!-- Ribbon tabs -->
+<div class="ribbon">
+  <div class="ribbon-tabs">
+    <div class="ribbon-tab" style="padding:6px 10px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+    <div class="ribbon-tab active">Funktioner</div>
+  </div>
+  <div class="ribbon-body">
+    <!-- Mødeplan group -->
+    <div class="ribbon-group">
+      <div class="ribbon-group-btns">
+        <div class="ribbon-btn">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg></div>
+          <div>Opdater</div>
+        </div>
+        <div class="ribbon-btn">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg></div>
+          <div>Udskiv</div>
+        </div>
+      </div>
+      <div class="ribbon-group-label">Mødeplan</div>
+    </div>
+
+    <!-- Periode group -->
+    <div class="ribbon-group">
+      <div class="ribbon-group-btns" style="flex-direction:column;align-items:flex-start;gap:3px">
+        <div class="period-ctrl">
+          <label>Vælg antal uger:</label>
+          <input type="number" value="4" style="width:36px">
+          <label>Vis uger fra:</label>
+          <input type="text" value="17-02-2025" style="width:72px">
+          <button>▼</button>
+        </div>
+        <div style="display:flex;gap:2px">
+          <div class="ribbon-btn small">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></div>
+            <span>Vis forrige uge</span>
+          </div>
+          <div class="ribbon-btn small">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></div>
+            <span>Vis næste uge</span>
+          </div>
+        </div>
+      </div>
+      <div class="ribbon-group-label">Periode</div>
+    </div>
+
+    <!-- Visninger group -->
+    <div class="ribbon-group">
+      <div class="ribbon-group-btns" style="flex-wrap:wrap;max-width:520px">
+        <div class="ribbon-btn">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <div>Vis</div>
+        </div>
+        <div class="ribbon-btn">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
+          <div>Rediger</div>
+        </div>
+        <div class="ribbon-btn">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/></svg></div>
+          <div>Vis/Skjul</div>
+        </div>
+        <div class="ribbon-btn">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+          <div>Vis tjenester▼</div>
+        </div>
+        <div class="ribbon-btn">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#e87722" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+          <div>Vis advarsler</div>
+        </div>
+        <div class="ribbon-btn">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div>Vis tid i 100-dele</div>
+        </div>
+        <div class="ribbon-btn">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+          <div>Vis alle aktivitetsplan</div>
+        </div>
+        <div class="ribbon-btn">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>Vis faste FO dage</div>
+        </div>
+        <div class="ribbon-btn">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#E2001A" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="9" y1="14" x2="15" y2="20"/><line x1="15" y1="14" x2="9" y2="20"/></svg></div>
+          <div>Vis ubrugte FO dage</div>
+        </div>
+        <div class="ribbon-btn">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <div>Vis afløsere</div>
+        </div>
+      </div>
+      <div class="ribbon-group-label">Visninger</div>
+    </div>
+
+    <!-- Normperioder group -->
+    <div class="ribbon-group">
+      <div class="ribbon-group-btns">
+        <div class="ribbon-btn">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><polyline points="9 16 11 18 15 14"/></svg></div>
+          <div>Opgør normperioder</div>
+        </div>
+      </div>
+      <div class="ribbon-group-label">Normperioder</div>
+    </div>
+
+    <!-- Tjenester group -->
+    <div class="ribbon-group">
+      <div class="ribbon-group-btns">
+        <div class="ribbon-btn">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+          <div>(Gen)udrul</div>
+        </div>
+        <div class="ribbon-btn">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#E2001A" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg></div>
+          <div>Fjern</div>
+        </div>
+      </div>
+      <div class="ribbon-group-label">Tjenester</div>
+    </div>
+
+    <!-- Arbejdstidsregler group -->
+    <div class="ribbon-group">
+      <div class="ribbon-group-btns">
+        <div class="ribbon-btn">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+          <div>Kør kontrol</div>
+        </div>
+      </div>
+      <div class="ribbon-group-label">Arbejdstidsregler</div>
+    </div>
+
+    <!-- Normtid group -->
+    <div class="ribbon-group">
+      <div class="ribbon-group-btns">
+        <div class="ribbon-btn">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+          <div>Vælg beregning▼</div>
+        </div>
+      </div>
+      <div class="ribbon-group-label">Normtid</div>
+    </div>
+
+    <!-- AI Optimering group -->
+    <div class="ribbon-group">
+      <div class="ribbon-group-btns">
+        <div class="ribbon-btn ai-btn" onclick="toggleAiPanel()" id="ai-ribbon-btn">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <div><span class="ai-spark">✦</span> AI Optimer</div>
+        </div>
+      </div>
+      <div class="ribbon-group-label kmd-ai-label">Optimering</div>
+    </div>
+  </div>
+</div>
+
+<!-- Page body: schedule + AI panel side by side -->
+<div class="page-body">
+
+<!-- Main scrollable area -->
+<div class="main-content">
+<table class="schedule-table">
+  <thead>
+    <!-- Week header row -->
+    <tr class="header-week">
+      <th colspan="4" style="background:#dde3ec;">Medarbejdere</th>
+      <th colspan="5">Uge 8 (2025) Godkendt 30-12-2024 for ugerne 5 - 8</th>
+      <th colspan="2" style="background:#c8d8ee;">Weekend</th>
+      <th colspan="5">Uge 9 (2025) Godkendt 27-01-2025 for ugerne 9 - 12</th>
+      <th colspan="2" style="background:#c8d8ee;">Weekend</th>
+      <th>Lønomkostninger</th>
+    </tr>
+    <!-- Day header row -->
+    <tr class="header-day">
+      <th class="col-afl">A...</th>
+      <th class="col-afl">Afl.form</th>
+      <th class="col-navn">Navn</th>
+      <th class="col-sort">Sortnr.</th>
+      <th class="col-medarb">Medarb.nr.</th>
+      <th>17-02 Ma</th>
+      <th>18-02 Ti</th>
+      <th>19-02 On</th>
+      <th>20-02 To</th>
+      <th>21-02 Fr</th>
+      <th class="weekend">22-02 Lø</th>
+      <th class="weekend">23-02 Sø</th>
+      <th>24-02 Ma</th>
+      <th>25-02 Ti</th>
+      <th>26-02 On</th>
+      <th>27-02 To</th>
+      <th>28-02 Fr</th>
+      <th class="weekend">01-03 ...</th>
+      <th class="col-lonk">Lønomkostn...</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- Tommy Ashton Jensen -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">t</td>
+      <td class="col-navn">Tommy Ashton Jen...</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">1731</td>
+      <td class="shift-cell"><span class="shift-block shift-green">0700-1424</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0700-1424</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0700-1424</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0700-1424</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0700-1424</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0700-1424</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0700-1424</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0700-1424</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0700-1424</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0700-1424</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="col-lonk" style="text-align:right">516,60</td>
+    </tr>
+    <tr class="data-row sub-row">
+      <td colspan="5"></td>
+      <td class="shift-cell"><span class="shift-block shift-teal">1430-1530</span></td>
+      <td colspan="13"></td>
+    </tr>
+
+    <!-- Sidhu Ünlü -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">t</td>
+      <td class="col-navn">Sidhu Ünlü</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">2571</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right">0,00</td>
+    </tr>
+
+    <!-- Susanne Roager -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">t</td>
+      <td class="col-navn">Susanne Roager</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">2815</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right">0,00</td>
+    </tr>
+
+    <!-- Niels-Henrik Jelsbye -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">t</td>
+      <td class="col-navn">Niels-Henrik Jelsbye</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">2816</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right">0,00</td>
+    </tr>
+
+    <!-- Albert Bernt Severin -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">m</td>
+      <td class="col-navn">Albert Bernt Severi...</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">3078</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right">0,00</td>
+    </tr>
+
+    <!-- Jean Lund -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">m</td>
+      <td class="col-navn">Jean Lund</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">755</td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-blue">1500-2300</span></td>
+      <td class="shift-cell"><span class="shift-block shift-blue">1500-2100</span></td>
+      <td class="shift-cell"><span class="shift-block shift-blue">1500-2300</span></td>
+      <td class="shift-cell"><span class="shift-block shift-blue">1500-2300</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-blue">1500-2300</span></td>
+      <td class="shift-cell"><span class="shift-block shift-blue">1500-2300</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-blue">1500-2300</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-blue">1500-2300</span></td>
+      <td class="col-lonk" style="text-align:right">0,00</td>
+    </tr>
+
+    <!-- Jacob Rask Dahlbom -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">t</td>
+      <td class="col-navn">Jacob Rask Dahlbom</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">2811</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right">0,00</td>
+    </tr>
+
+    <!-- Finn Møller-Jensen -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">t</td>
+      <td class="col-navn">Finn Møller-Jensen</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">2812</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"><span class="shift-block shift-blue">0800-1600</span></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right">2.540,16</td>
+    </tr>
+
+    <!-- Elisabeth Ærenskov -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">t</td>
+      <td class="col-navn">Elisabeth Ærenko...</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">2810</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"><span class="shift-block shift-blue">0800-1600</span></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right">1.342,24</td>
+    </tr>
+
+    <!-- Ditte Jacobsen -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">t</td>
+      <td class="col-navn">Ditte Jacobsen</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">2808</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right">0,00</td>
+    </tr>
+
+    <!-- Claude Monet -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">t</td>
+      <td class="col-navn">Claude Monet</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">1732</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right">0,00</td>
+    </tr>
+
+    <!-- Clara Olsen -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">m</td>
+      <td class="col-navn">Clara Olsen</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">624</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right">0,00</td>
+    </tr>
+
+    <!-- Bibi Juul-Jensen -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">m</td>
+      <td class="col-navn">Bibi Juul-Jensen</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">1770</td>
+      <td class="shift-cell"></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-blue">1000-1800</span></td>
+      <td class="shift-cell"><span class="shift-block shift-blue">0700-1900</span></td>
+      <td class="shift-cell"><span class="shift-block shift-blue">0700-1500</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0700-1500</span> <span class="shift-tag">UDK</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0700-1500</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0700-1500</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="col-lonk" style="text-align:right">1.505,92</td>
+    </tr>
+    <tr class="data-row sub-row">
+      <td colspan="5"></td>
+      <td colspan="7"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0715-1545</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1600</span></td>
+      <td class="shift-cell weekend"></td>
+      <td></td>
+    </tr>
+    <!-- Sub: 0800-1500 -->
+    <tr class="data-row sub-row">
+      <td colspan="5"></td>
+      <td colspan="2"></td>
+      <td colspan="1"><span class="shift-block shift-blue" style="font-size:8px">0800-1500</span></td>
+      <td colspan="10"></td>
+      <td></td>
+    </tr>
+
+    <!-- Bo Lønning Hansen -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">t</td>
+      <td class="col-navn">Bo Lønning Hansen</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">1747</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right">1.651,12</td>
+    </tr>
+
+    <!-- Birthe Gadegård -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">t</td>
+      <td class="col-navn">Birthe Gadegård</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">2809</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right">0,00</td>
+    </tr>
+
+    <!-- Bent Roager -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">m</td>
+      <td class="col-navn">Bent Roager</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">623</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right">0,00</td>
+    </tr>
+
+    <!-- Agnes Møller-Jensen -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">t</td>
+      <td class="col-navn">Agnes Møller-Jens...</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">2814</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right">0,00</td>
+    </tr>
+
+    <!-- Arthur Begvad -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">t</td>
+      <td class="col-navn">Arthur Begvad</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">2813</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right">0,00</td>
+    </tr>
+
+    <!-- Lukas Ünlü -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">t</td>
+      <td class="col-navn">Lukas Ünlü</td>
+      <td class="col-sortnr">3000</td>
+      <td class="col-medarbr">1742</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right">0,00</td>
+    </tr>
+
+    <!-- Web (red row) -->
+    <tr class="data-row highlight-red">
+      <td class="col-a"></td>
+      <td class="col-aflform" style="color:#C0392B;font-style:italic">m</td>
+      <td class="col-navn" style="color:#C0392B;font-style:italic">Web .</td>
+      <td class="col-sortnr" style="color:#C0392B;font-style:italic">1000</td>
+      <td class="col-medarbr" style="color:#C0392B;font-style:italic">0</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right;color:#C0392B;font-style:italic">0,00</td>
+    </tr>
+
+    <!-- Klaus (red) -->
+    <tr class="data-row highlight-red">
+      <td class="col-a"></td>
+      <td class="col-aflform" style="color:#C0392B;font-style:italic">m</td>
+      <td class="col-navn" style="color:#C0392B;font-style:italic">Klaus .</td>
+      <td class="col-sortnr" style="color:#C0392B;font-style:italic">1000</td>
+      <td class="col-medarbr" style="color:#C0392B;font-style:italic">0</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right;color:#C0392B;font-style:italic">0,00</td>
+    </tr>
+
+    <!-- Ib (red) -->
+    <tr class="data-row highlight-red">
+      <td class="col-a"></td>
+      <td class="col-aflform" style="color:#C0392B;font-style:italic">m</td>
+      <td class="col-navn" style="color:#C0392B;font-style:italic">Ib .</td>
+      <td class="col-sortnr" style="color:#C0392B;font-style:italic">1000</td>
+      <td class="col-medarbr" style="color:#C0392B;font-style:italic">0</td>
+      <td class="shift-cell"><span class="shift-block shift-blue">1400-2100</span></td>
+      <td class="shift-cell"><span class="shift-block shift-blue">1400-2100</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-blue">1400-2100</span></td>
+      <td class="shift-cell"><span class="shift-block shift-blue">1400-2100</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="col-lonk" style="text-align:right;color:#C0392B;font-style:italic">12.928,44</td>
+    </tr>
+
+    <!-- Annette (red) -->
+    <tr class="data-row highlight-red">
+      <td class="col-a"></td>
+      <td class="col-aflform" style="color:#C0392B;font-style:italic">m</td>
+      <td class="col-navn" style="color:#C0392B;font-style:italic">Annette .</td>
+      <td class="col-sortnr" style="color:#C0392B;font-style:italic">1000</td>
+      <td class="col-medarbr" style="color:#C0392B;font-style:italic">0</td>
+      <td class="shift-cell"><span class="shift-block shift-orange">0500-150</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-blue">1400-2200</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="col-lonk" style="text-align:right;color:#C0392B;font-style:italic">8.067,06</td>
+    </tr>
+
+    <!-- Afløser (red) -->
+    <tr class="data-row highlight-red">
+      <td class="col-a"></td>
+      <td class="col-aflform" style="color:#C0392B;font-style:italic">m</td>
+      <td class="col-navn" style="color:#C0392B;font-style:italic">Afløser .</td>
+      <td class="col-sortnr" style="color:#C0392B;font-style:italic">999</td>
+      <td class="col-medarbr" style="color:#C0392B;font-style:italic">0</td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td><td class="shift-cell weekend"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell"></td><td class="shift-cell"></td>
+      <td class="shift-cell weekend"></td>
+      <td class="col-lonk" style="text-align:right;color:#C0392B;font-style:italic">0,00</td>
+    </tr>
+
+    <!-- ole (red) -->
+    <tr class="data-row highlight-red">
+      <td class="col-a"></td>
+      <td class="col-aflform" style="color:#C0392B;font-style:italic">m</td>
+      <td class="col-navn" style="color:#C0392B;font-style:italic">ole .</td>
+      <td class="col-sortnr" style="color:#C0392B;font-style:italic">99</td>
+      <td class="col-medarbr" style="color:#C0392B;font-style:italic">0</td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-blue">0600-1300</span> <span class="shift-tag">A9</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="col-lonk" style="text-align:right;color:#C0392B;font-style:italic">3.358,95</td>
+    </tr>
+    <tr class="data-row sub-row highlight-red">
+      <td colspan="5"></td>
+      <td colspan="7"></td>
+      <td class="shift-cell"><span class="shift-block shift-blue" style="font-size:8px">0600-1400</span></td>
+      <td colspan="6"></td>
+      <td></td>
+    </tr>
+
+    <!-- Ester Flauenskjold -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">m</td>
+      <td class="col-navn">Ester Flauenskjold</td>
+      <td class="col-sortnr">42</td>
+      <td class="col-medarbr">611</td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1336</span> <span class="shift-tag">SY</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1336</span> <span class="shift-tag">SY</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1336</span> <span class="shift-tag">SY</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1336</span> <span class="shift-tag">SY</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1336</span> <span class="shift-tag">SY</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span> <span class="shift-tag">SY</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span> <span class="shift-tag">SY</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1336</span> <span class="shift-tag">SY</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1336</span> <span class="shift-tag">SY</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1336</span> <span class="shift-tag">SY</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1336</span> <span class="shift-tag">SY</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1336</span> <span class="shift-tag">SY</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="col-lonk" style="text-align:right">25.720,80</td>
+    </tr>
+
+    <!-- Karl B Hansen -->
+    <tr class="data-row">
+      <td class="col-a"></td>
+      <td class="col-aflform">m</td>
+      <td class="col-navn">Karl B Hansen</td>
+      <td class="col-sortnr">41</td>
+      <td class="col-medarbr">2799</td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1524</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1524</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1524</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1524</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1524</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1524</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1524</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1524</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1524</span></td>
+      <td class="shift-cell"><span class="shift-block shift-green">0800-1524</span></td>
+      <td class="shift-cell weekend"><span class="shift-block shift-yellow">0000-0000</span></td>
+      <td class="col-lonk" style="text-align:right">26.551,20</td>
+    </tr>
+
+    <!-- Bottom summary row -->
+    <tr class="bottom-summary">
+      <td colspan="5" style="text-align:left;padding-left:4px">Dag / Aften / Nat</td>
+      <td>14/2/1</td>
+      <td>14/2/1</td>
+      <td>14/1/1</td>
+      <td>12/0/1</td>
+      <td>10/2/1</td>
+      <td class="weekend">3/2/1</td>
+      <td class="weekend">3/2/1</td>
+      <td>13/2/0</td>
+      <td>11/3/0</td>
+      <td>11/3/0</td>
+      <td>9/5/0</td>
+      <td>9/5/0</td>
+      <td class="weekend">2/3/0</td>
+      <td></td>
+    </tr>
+
+  </tbody>
+</table>
+</div><!-- end main-content -->
+
+<!-- AI Optimizer Panel -->
+<div class="ai-panel" id="ai-panel">
+  <div class="ai-panel-inner">
+
+    <!-- Header -->
+    <div class="ai-panel-header">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+      </svg>
+      <div style="flex:1">
+        <h2>AI Vagtoptimering</h2>
+        <div class="ai-panel-subtitle">Begrænsninger · Kompetencer · Funktioner · Opgaver</div>
+      </div>
+      <div class="close-btn" onclick="toggleAiPanel()">✕</div>
+    </div>
+
+    <!-- Tab navigation -->
+    <div class="ai-tabs" id="ai-tabs">
+      <div class="ai-tab active" onclick="switchTab('overblik')">Overblik</div>
+      <div class="ai-tab" onclick="switchTab('begraensninger')">Begrænsninger</div>
+      <div class="ai-tab" onclick="switchTab('kompetencer')">Kompetencer</div>
+      <div class="ai-tab" onclick="switchTab('funktioner')">Funktioner</div>
+      <div class="ai-tab" onclick="switchTab('opgaver')">Opgaver</div>
+      <div class="ai-tab" onclick="switchTab('stillinger')">Stillingsbetegnelser</div>
+    </div>
+
+    <!-- Tab panes -->
+    <div class="ai-panel-body">
+
+      <!-- ══ OVERBLIK ══════════════════════════════════════════════════════ -->
+      <div class="ai-tab-pane active" id="pane-overblik">
+
+        <!-- Solver status -->
+        <div>
+          <div class="ai-section-label">Solver-status</div>
+          <div class="ai-status-bar">
+            <span class="pulse-dot" id="ai-dot"></span>
+            <span class="ai-status-txt" id="ai-status-txt">Klar til optimering</span>
+            <span class="ai-run-time" id="ai-run-time"></span>
+          </div>
+        </div>
+
+        <!-- Score -->
+        <div>
+          <div class="ai-section-label">Pointscore</div>
+          <div class="ai-score-row">
+            <div class="ai-score-card hard">
+              <div class="sc-label">HÅRD</div>
+              <div class="sc-val" id="sc-hard">0</div>
+            </div>
+            <div class="ai-score-card med">
+              <div class="sc-label">MEDIUM</div>
+              <div class="sc-val" id="sc-med">-2</div>
+            </div>
+            <div class="ai-score-card soft">
+              <div class="sc-label">BLØD</div>
+              <div class="sc-val" id="sc-soft">-14</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KPIs -->
+        <div>
+          <div class="ai-section-label">Nøgletal</div>
+          <div class="ai-kpi-row">
+            <div class="ai-kpi">
+              <div class="kl">Tildelte vagter</div>
+              <div class="kv" id="kpi-assigned">47/49</div>
+              <div class="ks">2 ubesatte</div>
+            </div>
+            <div class="ai-kpi">
+              <div class="kl">Fairness</div>
+              <div class="kv" id="kpi-fair">82%</div>
+              <div class="ks">fordeling</div>
+            </div>
+            <div class="ai-kpi">
+              <div class="kl">Overarbejde</div>
+              <div class="kv" id="kpi-ot">3,5t</div>
+              <div class="ks">over norm</div>
+            </div>
+            <div class="ai-kpi">
+              <div class="kl">Regelovertr.</div>
+              <div class="kv" id="kpi-breaks">2</div>
+              <div class="ks">bløde regler</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arbejdstidsfordeling -->
+        <div>
+          <div class="ai-section-label">Arbejdstidsfordeling</div>
+          <div style="background:white;border:1px solid var(--kmd-gray-line);border-radius:6px;padding:10px 12px" id="fairness-list"></div>
+        </div>
+
+      </div><!-- /overblik -->
+
+      <!-- ══ BEGRÆNSNINGER ═════════════════════════════════════════════════ -->
+      <div class="ai-tab-pane" id="pane-begraensninger">
+
+        <div class="ai-section-label">Regler og begrænsninger</div>
+        <div style="background:white;border:1px solid var(--kmd-gray-line);border-radius:6px;overflow:hidden">
+          <table class="constraint-table" style="width:100%">
+
+            <!-- HÅRDE -->
+            <tr style="background:#fdf0f0">
+              <td colspan="4" style="font-size:9px;font-weight:700;color:var(--kmd-danger);padding:6px 10px;letter-spacing:.06em;text-transform:uppercase">Hårde begrænsninger</td>
+            </tr>
+            <tr class="constraint-row-expand" onclick="toggleDetail('d1')">
+              <td><span class="c-status ok"></span></td>
+              <td><span class="c-badge hard">HÅRD</span></td>
+              <td style="font-size:10px;color:#222;font-weight:500">Ingen dobbelt-vagter</td>
+              <td class="c-score">0</td>
+            </tr>
+            <tr><td colspan="4" class="constraint-detail" id="d1">
+              <div class="c-weight"><label>Aktiv</label><input type="checkbox" checked></div>
+            </td></tr>
+
+            <tr class="constraint-row-expand" onclick="toggleDetail('d2')">
+              <td><span class="c-status ok"></span></td>
+              <td><span class="c-badge hard">HÅRD</span></td>
+              <td style="font-size:10px;color:#222;font-weight:500">Minimumshvile 11 timer</td>
+              <td class="c-score">0</td>
+            </tr>
+            <tr><td colspan="4" class="constraint-detail" id="d2">
+              <div class="c-weight"><label>Min. hvile (t)</label><input type="range" min="8" max="16" value="11" oninput="this.nextElementSibling.textContent=this.value"><span>11</span></div>
+            </td></tr>
+
+            <tr class="constraint-row-expand" onclick="toggleDetail('d3')">
+              <td><span class="c-status ok"></span></td>
+              <td><span class="c-badge hard">HÅRD</span></td>
+              <td style="font-size:10px;color:#222;font-weight:500">Maks. timer per uge</td>
+              <td class="c-score">0</td>
+            </tr>
+            <tr><td colspan="4" class="constraint-detail" id="d3">
+              <div class="c-weight"><label>Maks. timer/uge</label><input type="range" min="30" max="48" value="37" oninput="this.nextElementSibling.textContent=this.value"><span>37</span></div>
+            </td></tr>
+
+            <tr class="constraint-row-expand" onclick="toggleDetail('d4')">
+              <td><span class="c-status ok"></span></td>
+              <td><span class="c-badge hard">HÅRD</span></td>
+              <td style="font-size:10px;color:#222;font-weight:500">Kompetencekrav overholdt</td>
+              <td class="c-score">0</td>
+            </tr>
+            <tr><td colspan="4" class="constraint-detail" id="d4">
+              <div style="font-size:9px;color:var(--kmd-gray-mid)">Vagter kræver minimum én medarbejder med relevant kompetence pr. skift.</div>
+            </td></tr>
+
+            <!-- MELLEMHÅRDE -->
+            <tr style="background:#fef6ee">
+              <td colspan="4" style="font-size:9px;font-weight:700;color:var(--kmd-warn);padding:6px 10px;letter-spacing:.06em;text-transform:uppercase;border-top:1px solid var(--kmd-gray-line)">Mellemhårde begrænsninger</td>
+            </tr>
+            <tr class="constraint-row-expand" onclick="toggleDetail('d5')">
+              <td><span class="c-status warn"></span></td>
+              <td><span class="c-badge medium">MED</span></td>
+              <td style="font-size:10px;color:#222;font-weight:500">Alle vagter besatte</td>
+              <td class="c-score" id="c-unassigned-score" style="color:var(--kmd-warn)">-2</td>
+            </tr>
+            <tr id="c-unassigned"><td colspan="4" class="constraint-detail" id="d5">
+              <div class="c-weight"><label>Vægt</label><input type="range" min="1" max="10" value="8" oninput="this.nextElementSibling.textContent=this.value"><span>8</span></div>
+            </td></tr>
+
+            <tr class="constraint-row-expand" onclick="toggleDetail('d6')">
+              <td><span class="c-status ok"></span></td>
+              <td><span class="c-badge medium">MED</span></td>
+              <td style="font-size:10px;color:#222;font-weight:500">Stillingsbetegnelse opfyldt</td>
+              <td class="c-score">0</td>
+            </tr>
+            <tr><td colspan="4" class="constraint-detail" id="d6">
+              <div style="font-size:9px;color:var(--kmd-gray-mid)">Vagter kræver medarbejder med korrekt stillingsbetegnelse.</div>
+            </td></tr>
+
+            <!-- BLØDE -->
+            <tr style="background:var(--kmd-green-light)">
+              <td colspan="4" style="font-size:9px;font-weight:700;color:var(--kmd-green-dark);padding:6px 10px;letter-spacing:.06em;text-transform:uppercase;border-top:1px solid var(--kmd-gray-line)">Bløde begrænsninger</td>
+            </tr>
+            <tr class="constraint-row-expand" onclick="toggleDetail('d7')">
+              <td><span class="c-status warn"></span></td>
+              <td><span class="c-badge soft">BLØD</span></td>
+              <td style="font-size:10px;color:#222;font-weight:500">Foretrukne vagttider</td>
+              <td class="c-score" style="color:var(--kmd-green-dark)">-8</td>
+            </tr>
+            <tr><td colspan="4" class="constraint-detail" id="d7">
+              <div class="c-weight"><label>Vægt</label><input type="range" min="1" max="10" value="5" oninput="this.nextElementSibling.textContent=this.value"><span>5</span></div>
+            </td></tr>
+
+            <tr class="constraint-row-expand" onclick="toggleDetail('d8')">
+              <td><span class="c-status warn"></span></td>
+              <td><span class="c-badge soft">BLØD</span></td>
+              <td style="font-size:10px;color:#222;font-weight:500">Timefairness</td>
+              <td class="c-score" style="color:var(--kmd-green-dark)">-4</td>
+            </tr>
+            <tr><td colspan="4" class="constraint-detail" id="d8">
+              <div class="c-weight"><label>Vægt</label><input type="range" min="1" max="10" value="4" oninput="this.nextElementSibling.textContent=this.value"><span>4</span></div>
+            </td></tr>
+
+            <tr class="constraint-row-expand" onclick="toggleDetail('d9')">
+              <td><span class="c-status ok"></span></td>
+              <td><span class="c-badge soft">BLØD</span></td>
+              <td style="font-size:10px;color:#222;font-weight:500">Weekend-frihed</td>
+              <td class="c-score">-2</td>
+            </tr>
+            <tr><td colspan="4" class="constraint-detail" id="d9">
+              <div class="c-weight"><label>Vægt</label><input type="range" min="1" max="10" value="3" oninput="this.nextElementSibling.textContent=this.value"><span>3</span></div>
+            </td></tr>
+
+            <tr class="constraint-row-expand" onclick="toggleDetail('d10')">
+              <td><span class="c-status ok"></span></td>
+              <td><span class="c-badge soft">BLØD</span></td>
+              <td style="font-size:10px;color:#222;font-weight:500">Undgå splitvagter</td>
+              <td class="c-score">0</td>
+            </tr>
+            <tr><td colspan="4" class="constraint-detail" id="d10">
+              <div class="c-weight"><label>Vægt</label><input type="range" min="1" max="10" value="2" oninput="this.nextElementSibling.textContent=this.value"><span>2</span></div>
+            </td></tr>
+
+          </table>
+        </div>
+      </div><!-- /begrænsninger -->
+
+      <!-- ══ KOMPETENCER ═══════════════════════════════════════════════════ -->
+      <div class="ai-tab-pane" id="pane-kompetencer">
+        <div class="ai-section-label">Kompetencekrav pr. vagttype</div>
+        <p style="font-size:10px;color:var(--kmd-gray-mid);margin-bottom:2px">Angiv hvilke kompetencer der kræves eller ønskes for at dække en vagt.</p>
+
+        <div class="cat-card open" id="kcat1">
+          <div class="cat-card-header" onclick="toggleCat('kcat1')">
+            <div class="cat-card-title">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--kmd-green)" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Sygepleje
+            </div>
+            <div style="display:flex;align-items:center;gap:6px">
+              <span class="cat-badge-count">3</span>
+              <span class="cat-chevron">▾</span>
+            </div>
+          </div>
+          <div class="cat-card-body">
+            <div class="cat-item"><div class="cat-item-dot" style="background:#009B4D"></div><div class="cat-item-name">Sårpleje</div><div class="cat-item-count">4 med</div><span class="cat-item-req krav">Krav</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#4CAF7A"></div><div class="cat-item-name">Sondeernæring</div><div class="cat-item-count">2 med</div><span class="cat-item-req krav">Krav</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#00BF6F"></div><div class="cat-item-name">IV-behandling</div><div class="cat-item-count">3 med</div><span class="cat-item-req ønske">Ønske</span></div>
+            <button class="cat-add-btn">+ Tilføj kompetence</button>
+          </div>
+        </div>
+
+        <div class="cat-card" id="kcat2">
+          <div class="cat-card-header" onclick="toggleCat('kcat2')">
+            <div class="cat-card-title">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--kmd-green)" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Demens
+            </div>
+            <div style="display:flex;align-items:center;gap:6px">
+              <span class="cat-badge-count">2</span>
+              <span class="cat-chevron">▾</span>
+            </div>
+          </div>
+          <div class="cat-card-body">
+            <div class="cat-item"><div class="cat-item-dot" style="background:#1F614E"></div><div class="cat-item-name">Demenskoordinator</div><div class="cat-item-count">2 med</div><span class="cat-item-req krav">Krav</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#007A3D"></div><div class="cat-item-name">Validationsmetoden</div><div class="cat-item-count">5 med</div><span class="cat-item-req ønske">Ønske</span></div>
+            <button class="cat-add-btn">+ Tilføj kompetence</button>
+          </div>
+        </div>
+
+        <div class="cat-card" id="kcat3">
+          <div class="cat-card-header" onclick="toggleCat('kcat3')">
+            <div class="cat-card-title">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--kmd-green)" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Genoptræning
+            </div>
+            <div style="display:flex;align-items:center;gap:6px">
+              <span class="cat-badge-count">2</span>
+              <span class="cat-chevron">▾</span>
+            </div>
+          </div>
+          <div class="cat-card-body">
+            <div class="cat-item"><div class="cat-item-dot" style="background:#005C35"></div><div class="cat-item-name">Forflytningsvejleder</div><div class="cat-item-count">6 med</div><span class="cat-item-req krav">Krav</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#33C97A"></div><div class="cat-item-name">APAfit certificering</div><div class="cat-item-count">1 med</div><span class="cat-item-req ønske">Ønske</span></div>
+            <button class="cat-add-btn">+ Tilføj kompetence</button>
+          </div>
+        </div>
+
+        <button class="cat-add-btn" style="margin-top:4px">+ Ny kompetencekategori</button>
+      </div><!-- /kompetencer -->
+
+      <!-- ══ FUNKTIONER ════════════════════════════════════════════════════ -->
+      <div class="ai-tab-pane" id="pane-funktioner">
+        <div class="ai-section-label">Funktioner og ansvarsområder</div>
+        <p style="font-size:10px;color:var(--kmd-gray-mid);margin-bottom:2px">Definér hvilke funktioner der skal dækkes i hver vagt.</p>
+
+        <div class="cat-card open" id="fcat1">
+          <div class="cat-card-header" onclick="toggleCat('fcat1')">
+            <div class="cat-card-title">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--kmd-green)" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Dagvagt 07–15
+            </div>
+            <div style="display:flex;align-items:center;gap:6px">
+              <span class="cat-badge-count">4</span>
+              <span class="cat-chevron">▾</span>
+            </div>
+          </div>
+          <div class="cat-card-body">
+            <div class="cat-item"><div class="cat-item-dot" style="background:#009B4D"></div><div class="cat-item-name">Kontaktperson</div><div class="cat-item-count">min. 2</div><span class="cat-item-req krav">Krav</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#4CAF7A"></div><div class="cat-item-name">Medicinhåndtering</div><div class="cat-item-count">min. 1</div><span class="cat-item-req krav">Krav</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#00BF6F"></div><div class="cat-item-name">Gruppeansvarlig</div><div class="cat-item-count">min. 1</div><span class="cat-item-req krav">Krav</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#7DC9A0"></div><div class="cat-item-name">Ledsagerfunktion</div><div class="cat-item-count">ønsket 1</div><span class="cat-item-req ønske">Ønske</span></div>
+            <button class="cat-add-btn">+ Tilføj funktion</button>
+          </div>
+        </div>
+
+        <div class="cat-card" id="fcat2">
+          <div class="cat-card-header" onclick="toggleCat('fcat2')">
+            <div class="cat-card-title">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--kmd-green)" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Aftenvagt 15–23
+            </div>
+            <div style="display:flex;align-items:center;gap:6px">
+              <span class="cat-badge-count">3</span>
+              <span class="cat-chevron">▾</span>
+            </div>
+          </div>
+          <div class="cat-card-body">
+            <div class="cat-item"><div class="cat-item-dot" style="background:#1F614E"></div><div class="cat-item-name">Kontaktperson</div><div class="cat-item-count">min. 1</div><span class="cat-item-req krav">Krav</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#007A3D"></div><div class="cat-item-name">Medicinhåndtering</div><div class="cat-item-count">min. 1</div><span class="cat-item-req krav">Krav</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#005C35"></div><div class="cat-item-name">Nødprocedure-ansvarlig</div><div class="cat-item-count">min. 1</div><span class="cat-item-req ønske">Ønske</span></div>
+            <button class="cat-add-btn">+ Tilføj funktion</button>
+          </div>
+        </div>
+
+        <button class="cat-add-btn" style="margin-top:4px">+ Ny vagttype</button>
+      </div><!-- /funktioner -->
+
+      <!-- ══ OPGAVER ════════════════════════════════════════════════════════ -->
+      <div class="ai-tab-pane" id="pane-opgaver">
+        <div class="ai-section-label">Opgaver og aktiviteter</div>
+        <p style="font-size:10px;color:var(--kmd-gray-mid);margin-bottom:2px">Tilknyt specifikke opgaver til medarbejdere eller vagttyper.</p>
+
+        <div class="cat-card open" id="ocat1">
+          <div class="cat-card-header" onclick="toggleCat('ocat1')">
+            <div class="cat-card-title">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--kmd-green)" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Faste daglige opgaver
+            </div>
+            <div style="display:flex;align-items:center;gap:6px">
+              <span class="cat-badge-count">4</span>
+              <span class="cat-chevron">▾</span>
+            </div>
+          </div>
+          <div class="cat-card-body">
+            <div class="cat-item"><div class="cat-item-dot" style="background:#009B4D"></div><div class="cat-item-name">Morgenmedicin</div><div class="cat-item-count">Dagvagt</div><span class="cat-item-req krav">Krav</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#4CAF7A"></div><div class="cat-item-name">Sår- og hudpleje</div><div class="cat-item-count">Dagvagt</div><span class="cat-item-req krav">Krav</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#00BF6F"></div><div class="cat-item-name">Personlig hygiejne</div><div class="cat-item-count">Alle vagter</div><span class="cat-item-req krav">Krav</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#7DC9A0"></div><div class="cat-item-name">Aktivitetstilbud</div><div class="cat-item-count">Dagvagt</div><span class="cat-item-req ønske">Ønske</span></div>
+            <button class="cat-add-btn">+ Tilføj opgave</button>
+          </div>
+        </div>
+
+        <div class="cat-card" id="ocat2">
+          <div class="cat-card-header" onclick="toggleCat('ocat2')">
+            <div class="cat-card-title">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--kmd-green)" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Ugentlige opgaver
+            </div>
+            <div style="display:flex;align-items:center;gap:6px">
+              <span class="cat-badge-count">3</span>
+              <span class="cat-chevron">▾</span>
+            </div>
+          </div>
+          <div class="cat-card-body">
+            <div class="cat-item"><div class="cat-item-dot" style="background:#1F614E"></div><div class="cat-item-name">Pårørendesamtale</div><div class="cat-item-count">Tirsdag</div><span class="cat-item-req ønske">Ønske</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#007A3D"></div><div class="cat-item-name">Tværfagligt møde</div><div class="cat-item-count">Onsdag</div><span class="cat-item-req krav">Krav</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#005C35"></div><div class="cat-item-name">Statusdokumentation</div><div class="cat-item-count">Fredag</div><span class="cat-item-req krav">Krav</span></div>
+            <button class="cat-add-btn">+ Tilføj opgave</button>
+          </div>
+        </div>
+
+        <button class="cat-add-btn" style="margin-top:4px">+ Ny opgavekategori</button>
+      </div><!-- /opgaver -->
+
+      <!-- ══ STILLINGSBETEGNELSER ══════════════════════════════════════════ -->
+      <div class="ai-tab-pane" id="pane-stillinger">
+        <div class="ai-section-label">Stillingsbetegnelser</div>
+        <p style="font-size:10px;color:var(--kmd-gray-mid);margin-bottom:2px">Konfigurér krav til stillingsbetegnelser pr. vagttype og tidspunkt.</p>
+
+        <div class="cat-card open" id="scat1">
+          <div class="cat-card-header" onclick="toggleCat('scat1')">
+            <div class="cat-card-title">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--kmd-green)" stroke-width="2.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Sygeplejersker
+            </div>
+            <div style="display:flex;align-items:center;gap:6px">
+              <span class="cat-badge-count">2</span>
+              <span class="cat-chevron">▾</span>
+            </div>
+          </div>
+          <div class="cat-card-body">
+            <div class="cat-item"><div class="cat-item-dot" style="background:#009B4D"></div><div class="cat-item-name">Sygeplejerske</div><div class="cat-item-count">min. 1 dag</div><span class="cat-item-req krav">Krav</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#4CAF7A"></div><div class="cat-item-name">Specialsygeplejerske</div><div class="cat-item-count">aften ønsket</div><span class="cat-item-req ønske">Ønske</span></div>
+            <button class="cat-add-btn">+ Tilføj stillingsbetegnelse</button>
+          </div>
+        </div>
+
+        <div class="cat-card" id="scat2">
+          <div class="cat-card-header" onclick="toggleCat('scat2')">
+            <div class="cat-card-title">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--kmd-green)" stroke-width="2.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Social- og sundhedsassistenter
+            </div>
+            <div style="display:flex;align-items:center;gap:6px">
+              <span class="cat-badge-count">3</span>
+              <span class="cat-chevron">▾</span>
+            </div>
+          </div>
+          <div class="cat-card-body">
+            <div class="cat-item"><div class="cat-item-dot" style="background:#1F614E"></div><div class="cat-item-name">Social- og sundhedsassistent</div><div class="cat-item-count">min. 2 dag</div><span class="cat-item-req krav">Krav</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#007A3D"></div><div class="cat-item-name">SOSU-assistent m. ledelsesansvar</div><div class="cat-item-count">min. 1 dag</div><span class="cat-item-req krav">Krav</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#005C35"></div><div class="cat-item-name">Social- og sundhedshjælper</div><div class="cat-item-count">min. 1 aften</div><span class="cat-item-req ønske">Ønske</span></div>
+            <button class="cat-add-btn">+ Tilføj stillingsbetegnelse</button>
+          </div>
+        </div>
+
+        <div class="cat-card" id="scat3">
+          <div class="cat-card-header" onclick="toggleCat('scat3')">
+            <div class="cat-card-title">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--kmd-green)" stroke-width="2.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Elever og vikarer
+            </div>
+            <div style="display:flex;align-items:center;gap:6px">
+              <span class="cat-badge-count">2</span>
+              <span class="cat-chevron">▾</span>
+            </div>
+          </div>
+          <div class="cat-card-body">
+            <div class="cat-item"><div class="cat-item-dot" style="background:#33C97A"></div><div class="cat-item-name">SOSU-elev</div><div class="cat-item-count">maks. 2 pr. vagt</div><span class="cat-item-req ønske">Ønske</span></div>
+            <div class="cat-item"><div class="cat-item-dot" style="background:#2D8C5E"></div><div class="cat-item-name">Afløser / vikar</div><div class="cat-item-count">ved behov</div><span class="cat-item-req ønske">Ønske</span></div>
+            <button class="cat-add-btn">+ Tilføj stillingsbetegnelse</button>
+          </div>
+        </div>
+
+        <button class="cat-add-btn" style="margin-top:4px">+ Ny stillingskategori</button>
+      </div><!-- /stillinger -->
+
+    </div><!-- end ai-panel-body -->
+
+    <!-- Footer -->
+    <div class="ai-footer">
+      <div class="ai-progress-wrap" id="ai-progress">
+        <div class="ai-progress-bg"><div class="ai-progress-fill" id="ai-prog-fill"></div></div>
+        <div class="ai-progress-step" id="ai-prog-step">Initialiserer...</div>
+      </div>
+      <div class="ai-log" id="ai-log"></div>
+      <button class="ai-solve-btn" id="ai-solve-btn" onclick="startSolve()">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        </svg>
+        Optimer vagtplan med AI
+      </button>
+    </div>
+
+  </div>
+</div><!-- end ai-panel -->
+
+</div><!-- end page-body -->
+
+<!-- Status bar -->
+<div class="status-bar">
+  <span>Tørning Ældre center – inde</span>
+  <span style="opacity:.4">·</span>
+  <span>Uge 8–9, 2025</span>
+  <span style="opacity:.4">·</span>
+  <span>13 medarbejdere</span>
+  <span style="margin-left:auto;opacity:.5;font-size:9px">KMD Nexus Mødeplan</span>
+</div>
+
+<script>
+// ── Tab navigation ────────────────────────────────────────────────────────
+function switchTab(id) {
+  document.querySelectorAll('.ai-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.ai-tab-pane').forEach(p => p.classList.remove('active'));
+  document.getElementById('pane-' + id).classList.add('active');
+  document.querySelectorAll('.ai-tab').forEach(t => {
+    if (t.textContent.trim().toLowerCase().replace(/æ/g,'ae').replace(/ø/g,'o').replace(/å/g,'a')
+        .replace(/ /g,'') === id.replace(/ae/g,'ae'))
+      t.classList.add('active');
+  });
+  // match by onclick
+  document.querySelectorAll('.ai-tab').forEach(t => {
+    if (t.getAttribute('onclick') === "switchTab('"+id+"')") t.classList.add('active');
+  });
+  if (id === 'overblik') renderFairness();
+}
+
+// ── Category accordion ────────────────────────────────────────────────────
+function toggleCat(id) {
+  document.getElementById(id).classList.toggle('open');
+}
+
+// ── Constraint detail expand ──────────────────────────────────────────────
+function toggleDetail(id) {
+  document.getElementById(id).classList.toggle('open');
+}
+
+// ── AI Panel toggle ────────────────────────────────────────────────────────
+function toggleAiPanel() {
+  const panel = document.getElementById('ai-panel');
+  const btn   = document.getElementById('ai-ribbon-btn');
+  const isOpen = panel.classList.contains('open');
+  panel.classList.toggle('open');
+  btn.style.background = isOpen ? 'var(--kmd-green)' : 'var(--kmd-green-dark)';
+  if (!isOpen) renderFairness();
+}
+
+// ── Fairness data ─────────────────────────────────────────────────────────
+const employees = [
+  { name: 'Tommy Ashton Jen.', hours: 80.5 },
+  { name: 'Jean Lund',         hours: 60.0 },
+  { name: 'Finn Møller-Jensen',hours: 7.5  },
+  { name: 'Elisabeth Ærenko.', hours: 7.5  },
+  { name: 'Bibi Juul-Jensen',  hours: 52.5 },
+  { name: 'Bo Lønning Hansen', hours: 0    },
+  { name: 'Ester Flauenskjold',hours: 75.0 },
+  { name: 'Karl B Hansen',     hours: 80.5 },
+  { name: 'Ib .',              hours: 32.0 },
+  { name: 'Annette .',         hours: 15.0 },
+  { name: 'Clara Olsen',       hours: 0    },
+  { name: 'Bent Roager',       hours: 0    },
+  { name: 'ole .',             hours: 7.5  },
+];
+const colors = ['#009B4D','#007A3D','#00BF6F','#1F614E','#4CAF7A','#005C35','#00A064','#163F30','#33C97A','#2D8C5E','#006B3E','#45B87C','#1A4D37'];
+
+function renderFairness() {
+  const el = document.getElementById('fairness-list');
+  const max = Math.max(...employees.map(e => e.hours), 1);
+  el.innerHTML = employees.map((e, i) => `
+    <div class="fairness-item">
+      <div style="display:flex;justify-content:space-between">
+        <div class="fairness-name">${e.name}</div>
+        <div class="fairness-hours">${e.hours.toFixed(1)}t</div>
+      </div>
+      <div class="fairness-bar-bg">
+        <div class="fairness-bar-fill" style="width:${(e.hours/max*100).toFixed(1)}%;background:${colors[i%colors.length]}"></div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// ── Solver log ────────────────────────────────────────────────────────────
+function aiLog(type, msg) {
+  const el = document.getElementById('ai-log');
+  const t  = new Date().toTimeString().slice(0,8);
+  const div = document.createElement('div');
+  div.className = `ai-log-line ${type}`;
+  div.innerHTML = `<span class="ai-log-time">${t}</span>${msg}`;
+  el.appendChild(div);
+  el.scrollTop = el.scrollHeight;
+  while (el.children.length > 60) el.removeChild(el.firstChild);
+}
+
+// ── Solve ─────────────────────────────────────────────────────────────────
+function startSolve() {
+  const btn  = document.getElementById('ai-solve-btn');
+  const prog = document.getElementById('ai-progress');
+  const fill = document.getElementById('ai-prog-fill');
+  const step = document.getElementById('ai-prog-step');
+  const dot  = document.getElementById('ai-dot');
+  const stxt = document.getElementById('ai-status-txt');
+  const rt   = document.getElementById('ai-run-time');
+
+  btn.disabled = true;
+  prog.classList.add('show');
+  dot.className = 'pulse-dot solving';
+  stxt.textContent = 'Solver kører...';
+
+  const steps = [
+    [8,  'info', 'Initialiserer constraint engine...'],
+    [18, 'info', 'Indlæser medarbejder-kontrakter'],
+    [30, 'info', 'Constraint propagation – HARD regler'],
+    [42, 'info', 'Besætter ubesatte vagter (MEDIUM)'],
+    [55, 'info', 'Late Acceptance algorithm – iteration 1'],
+    [65, 'info', 'Late Acceptance algorithm – iteration 2'],
+    [75, 'warn', 'Soft score forbedret: -14 → -10'],
+    [84, 'info', 'Diminished returns detekteret'],
+    [92, 'warn', 'Soft score forbedret: -10 → -8'],
+    [100,'ok',   'SOLVING_COMPLETED · 0hard/0medium/-8soft ✓'],
+  ];
+
+  let i = 0; let elapsed = 0;
+  const timer = setInterval(() => { elapsed++; rt.textContent = elapsed + 's'; }, 1000);
+
+  function next() {
+    if (i >= steps.length) {
+      clearInterval(timer);
+      setTimeout(() => {
+        prog.classList.remove('show');
+        btn.disabled = false;
+        dot.className = 'pulse-dot';
+        stxt.textContent = 'Optimering fuldført';
+        applySolution();
+      }, 600);
+      return;
+    }
+    const [pct, type, msg] = steps[i++];
+    fill.style.width = pct + '%';
+    step.textContent = msg;
+    aiLog(type, msg);
+    setTimeout(next, 300 + Math.random() * 200);
+  }
+  aiLog('info', '── Ny optimering startet ──');
+  next();
+}
+
+function applySolution() {
+  // Update score display
+  document.getElementById('sc-med').textContent = '0';
+  document.getElementById('sc-soft').textContent = '-8';
+  document.getElementById('kpi-assigned').textContent = '49/49';
+  document.getElementById('kpi-fair').textContent = '91%';
+  document.getElementById('kpi-ot').textContent = '1,5t';
+  document.getElementById('kpi-breaks').textContent = '1';
+
+  // Update constraint row
+  const cu = document.getElementById('c-unassigned');
+  cu.cells[0].innerHTML = '<span class="c-status ok"></span>';
+  cu.cells[3].style.color = '#4caf50';
+  cu.cells[3].textContent = '0';
+
+  // Update fairness bars with improved hours
+  employees[5].hours = 22.5;
+  employees[9].hours = 30.0;
+  employees[10].hours = 15.0;
+  employees[11].hours = 15.0;
+  renderFairness();
+
+  aiLog('ok', 'Vagtplan opdateret · 49 vagter besat');
+}
+
+// Init log
+aiLog('info', 'Modul klar · 13 medarbejdere indlæst');
+aiLog('warn', '2 ubesatte vagter · kør optimering');
+</script>
+
+
+</div><!-- end app-wrapper -->
+
+<script>
+function doLogin() {
+  const val = document.getElementById('login-input').value;
+  const err = document.getElementById('login-error');
+  const box = document.getElementById('login-box');
+  if (val === '123456') {
+    const overlay = document.getElementById('login-overlay');
+    overlay.style.opacity = '1';
+    overlay.style.transition = 'opacity .4s ease';
+    setTimeout(() => { overlay.style.opacity = '0'; }, 50);
+    setTimeout(() => {
+      overlay.style.display = 'none';
+      document.getElementById('app-wrapper').style.display = 'block';
+    }, 450);
+  } else {
+    err.classList.add('show');
+    box.classList.remove('login-shake');
+    void box.offsetWidth; // reflow
+    box.classList.add('login-shake');
+    document.getElementById('login-input').value = '';
+    document.getElementById('login-input').focus();
+  }
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('login-input').focus();
+});
+</script>
+
+</body>
+</html>
